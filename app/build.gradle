@@ -36,3 +36,13 @@ tasks.named('test') {
     // Use junit platform for unit tests.
     useJUnitPlatform()
 }
+
+plugins {
+  id 'application'
+  id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+javafx {
+  version = "15.0.1"
+  modules = [ 'javafx.controls' ]
+}
